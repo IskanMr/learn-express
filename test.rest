@@ -1,0 +1,29 @@
+### Create table setup
+GET http://localhost:3000/setup
+
+### Get all schools
+GET http://localhost:3000/schools
+
+### Create a new school
+POST http://localhost:3000/schools
+Content-Type: application/json
+
+{
+  "name": "Test School",
+  "address": "123 Test Avenue"
+}
+
+### Get a single school by ID
+GET http://localhost:3000/schools/1
+
+### Update a school
+PUT http://localhost:3000/schools/1
+Content-Type: application/json
+
+{
+  "name": "Updated Test School",
+  "address": "456 Updated Avenue"
+}
+
+### Delete a school
+DELETE http://localhost:3000/schools/1
